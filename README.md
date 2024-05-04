@@ -1,4 +1,4 @@
-# Python Game Of Life with Pygame
+# Conway's Game Of Life
 
 This is a Python implementation of Conway's Game of Life using Pygame. The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It's a zero-player game, meaning its evolution is determined by its initial state, requiring no further input from human players. Players set up the initial configuration of cells on a grid, and then watch as generations evolve over time.
 
@@ -12,22 +12,16 @@ The project aims to provide an interactive experience, allowing users to visuall
 - **Random Initialization**: Generate a random starting point to explore unexpected patterns and behaviors.
 - **Infinite Grid**: Thanks to edge wrapping, experience an unbounded canvas for your cellular automata, allowing patterns to move seamlessly across the grid boundaries.
 
-# Video Tutorial
+# START
+At the start of the game, the initial state of the grid is set. Then, according to a set of rules, the state of each cell in the grid is updated simultaneously for each generation. The rules are as follows:
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="960">
-</p>
+Underpopulation: If a living cell has fewer than two living neighbors, it dies due to loneliness.
+Stable population: If a living cell has two or three living neighbors, it remains alive in the next generation.
+Overpopulation: If a living cell has more than three living neighbors, it dies due to overcrowding.
+Reproduction: If a dead cell has exactly three living neighbors, it becomes alive in the next generation due to reproduction.
+These simple rules lead to surprisingly complex patterns and behaviors. Some configurations stabilize into static patterns, while others oscillate between different states. There are also patterns that move across the grid, such as gliders, which create the illusion of animated motion.
 
-<p align="center">
-🎥 <a href = "https://youtu.be/uR0lNADr4dc">Video Tutorial on YouTube</a>
-</p>
-
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.educ8s.tv">My Website</a> | <br>
-</p>
+The Game of Life has been studied extensively by mathematicians, computer scientists, and enthusiasts, leading to the discovery of various interesting patterns, such as glider guns, breeders, and spaceships. It has applications in various fields, including computer science, biology, and artificial life research, as it provides a simple yet powerful model of complex systems and emergent behavior.
 
 
 ## How to Run the Program
